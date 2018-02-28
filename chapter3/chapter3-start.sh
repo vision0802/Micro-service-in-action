@@ -17,3 +17,6 @@ java -jar hello-service-0.0.1.jar --server.port=8001 &
 echo "*********************************************************启动hello-service 服务节点8002***************************************************"
 java -jar hello-service-0.0.1.jar --server.port=8002 &
 
+echo "*********************************************************启动ribbon-consumer 服务节点8003***************************************************"
+cd ../../ribbon-consumer/target/
+java -jar ribbon-consumer-0.0.1.jar &
